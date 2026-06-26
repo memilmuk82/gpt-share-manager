@@ -155,3 +155,15 @@ AI가 만든 구조를 이해하지 못한 채 유지보수할 위험이 있다.
 각 Phase 종료 시 Phase Maintenance를 수행한다.
 테스트 없이 구조를 바꾸지 않는다.
 ```
+## Git 기록 방식 결정
+
+커밋 메시지는 `[Phase] type: 한국어 설명` 형식을 사용한다.
+
+이 결정은 기술 스택 자체보다는 개발 프로세스 결정에 가깝지만, AI 협업 개발과 유지보수 방식에 직접 영향을 주므로 함께 기록한다.
+
+세부 기준:
+
+```text
+docs/guides/GIT_WORKFLOW.md
+docs/adr/0006-use-phase-based-korean-commit-messages.md
+```

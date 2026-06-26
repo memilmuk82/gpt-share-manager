@@ -361,3 +361,26 @@ uv run pytest
 다음 Step:
 - ...
 ```
+## Git 작업 흐름 준수
+
+Codex는 아래 문서를 기준으로 Git 작업을 보조한다.
+
+```text
+docs/guides/GIT_WORKFLOW.md
+```
+
+원칙:
+
+```text
+승인 없는 commit 금지
+승인 없는 push 금지
+수정 후 git diff 요약 제시
+커밋 메시지는 사용자가 최종 결정
+권장 커밋 메시지는 [Phase] type: 한국어 설명 형식으로 제안
+```
+
+예시:
+
+```text
+[F-1] feat: Flask 최소 앱 실행
+```

@@ -52,6 +52,7 @@ Step 12. Tailwind CLI 빌드 흐름 추가
 Step 13. pytest 기본 테스트 추가
 Step 14. PROJECT_STATUS.md에 F-1 결과 기록
 Step 15. Phase Maintenance 수행
+Step 16. Git 커밋 메시지 규칙에 따라 상태 저장
 ```
 
 각 Step은 다음 기준을 따른다.
@@ -112,7 +113,8 @@ gpt-share-manager/
    │  ├─ PHASE_F1_TASK_PLAN.md
    │  └─ DEVELOPMENT_LOG.md
    ├─ guides/
-   │  └─ CODEX_PROMPT_PHASE_F1.md
+   │  ├─ CODEX_PROMPT_PHASE_F1.md
+   │  └─ GIT_WORKFLOW.md
    ├─ decisions/
    │  ├─ AI_COLLABORATION_REVIEW.md
    │  ├─ TECH_STACK_DECISIONS.md
@@ -122,7 +124,8 @@ gpt-share-manager/
       ├─ 0002-use-postgresql-only.md
       ├─ 0003-human-controlled-ai-collaboration.md
       ├─ 0004-progressive-structuring.md
-      └─ 0005-use-jinja-vanilla-tailwind.md
+      ├─ 0005-use-jinja-vanilla-tailwind.md
+      └─ 0006-use-phase-based-korean-commit-messages.md
 ```
 
 루트에는 핵심 기준 문서만 둔다. 세부 설명과 결정 기록은 `docs/` 아래에 둔다.
@@ -556,4 +559,36 @@ uv.lock이 재현 가능한 상태로 생성되었는가?
 
 ```text
 Phase F-2: SQLAlchemy 모델 + Alembic
+```
+## 8. Git 커밋 기준
+
+Phase F-1부터 커밋 메시지는 아래 형식을 따른다.
+
+```text
+[Phase] type: 한국어 설명
+```
+
+F-1 예시:
+
+```text
+[F-1] build: uv 프로젝트 초기화
+[F-1] feat: Flask 최소 앱 실행
+[F-1] test: health check 테스트 추가
+[F-1] refactor: app factory 구조로 분리
+[F-1] docs: Phase F-1 진행 상태 갱신
+```
+
+커밋 전 확인:
+
+```text
+git status 확인
+git diff 확인
+실행 또는 테스트 결과 확인
+커밋 메시지가 변경 성격을 정확히 설명하는지 확인
+```
+
+세부 기준은 다음 문서를 따른다.
+
+```text
+docs/guides/GIT_WORKFLOW.md
 ```

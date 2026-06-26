@@ -201,6 +201,40 @@ Phase별 세부 계획과 Codex 프롬프트는 docs/ 아래에 둔다.
 기술 선택 이유는 docs/decisions/ 또는 docs/adr/에 둔다.
 ```
 
+## 4-3. Git 기록과 커밋 메시지 원칙
+
+이 프로젝트에서 Git 기록은 단순한 저장 기록이 아니라 개발 과정과 판단을 남기는 학습 자료다.
+
+커밋 메시지는 다음 형식을 기본으로 한다.
+
+```text
+[Phase] type: 한국어 설명
+```
+
+예시:
+
+```text
+[F-0] docs: 프로젝트 명세와 AI 협업 개발 원칙 정리
+[F-1] build: uv 프로젝트 초기화
+[F-1] feat: Flask 최소 앱 실행
+```
+
+이 방식을 선택한 이유:
+
+```text
+Phase 흐름을 git log만 보고도 추적할 수 있다.
+영어 type prefix로 변경 성격을 빠르게 구분할 수 있다.
+한국어 설명으로 학교/수업/개인 학습 맥락에서 읽기 쉽다.
+AI/Codex가 만든 변경도 사용자가 검토하고 승인한 기록으로 남길 수 있다.
+```
+
+세부 기준은 아래 문서에 둔다.
+
+```text
+docs/guides/GIT_WORKFLOW.md
+docs/adr/0006-use-phase-based-korean-commit-messages.md
+```
+
 ## 5. 목표 사용자
 
 ```text

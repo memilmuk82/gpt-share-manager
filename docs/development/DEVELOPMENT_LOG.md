@@ -67,3 +67,23 @@ Docker/OCI 배포와 궁합이 좋다.
 새 작업자는 핵심 문서부터 읽을 수 있다.
 기술 선택과 의사결정 기록을 ADR로 남길 수 있다.
 ```
+### Git 작업 흐름과 커밋 메시지 원칙 확정
+
+커밋 메시지는 `[Phase] type: 한국어 설명` 형식을 기본으로 사용한다.
+
+결정 이유:
+
+```text
+Git 기록을 단순 저장 기록이 아니라 개발 과정과 판단의 기록으로 남긴다.
+영어 type prefix로 변경 성격을 빠르게 구분한다.
+한국어 설명으로 학교/수업/개인 학습 맥락에서 읽기 쉽게 한다.
+Phase prefix로 프로젝트 진행 흐름을 추적한다.
+Codex가 만든 변경도 사용자가 diff를 검토하고 승인한 뒤 커밋한다.
+```
+
+추가 문서:
+
+```text
+docs/guides/GIT_WORKFLOW.md
+docs/adr/0006-use-phase-based-korean-commit-messages.md
+```

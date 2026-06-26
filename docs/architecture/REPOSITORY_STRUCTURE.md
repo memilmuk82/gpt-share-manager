@@ -32,7 +32,8 @@ gpt-share-manager/
    │  ├─ PHASE_F1_TASK_PLAN.md
    │  └─ DEVELOPMENT_LOG.md
    ├─ guides/
-   │  └─ CODEX_PROMPT_PHASE_F1.md
+   │  ├─ CODEX_PROMPT_PHASE_F1.md
+   │  └─ GIT_WORKFLOW.md
    ├─ decisions/
    │  ├─ AI_COLLABORATION_REVIEW.md
    │  ├─ TECH_STACK_DECISIONS.md
@@ -42,7 +43,8 @@ gpt-share-manager/
       ├─ 0002-use-postgresql-only.md
       ├─ 0003-human-controlled-ai-collaboration.md
       ├─ 0004-progressive-structuring.md
-      └─ 0005-use-jinja-vanilla-tailwind.md
+      ├─ 0005-use-jinja-vanilla-tailwind.md
+      └─ 0006-use-phase-based-korean-commit-messages.md
 ```
 
 ## 루트 문서 원칙
@@ -74,3 +76,16 @@ PROJECT_STATUS.md
 이 저장소 구조도 처음부터 과도하게 확장하지 않는다.
 
 F-1에서는 필요한 문서와 최소 앱 구조만 만든다. `models/`, `services/`, `repositories/`는 실제 필요가 생기는 Phase에서 추가한다.
+## Git 문서 원칙
+
+Git 작업 흐름과 커밋 메시지 규칙은 아래 문서에 둔다.
+
+```text
+docs/guides/GIT_WORKFLOW.md
+```
+
+Phase 기반 한국어 커밋 메시지 사용 결정은 ADR로 남긴다.
+
+```text
+docs/adr/0006-use-phase-based-korean-commit-messages.md
+```

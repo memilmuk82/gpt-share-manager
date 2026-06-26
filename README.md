@@ -46,3 +46,24 @@ AI가 전체 앱을 대신 만들지 않는다.
 작동하는 코드에서 시작해 필요할 때 구조화한다.
 각 Phase 종료 시 Phase Maintenance를 수행한다.
 ```
+## Git 작업 흐름
+
+커밋 메시지는 다음 형식을 기본으로 한다.
+
+```text
+[Phase] type: 한국어 설명
+```
+
+예시:
+
+```text
+[F-0] docs: 프로젝트 명세와 AI 협업 개발 원칙 정리
+[F-1] build: uv 프로젝트 초기화
+[F-1] feat: Flask 최소 앱 실행
+```
+
+세부 기준:
+
+```text
+docs/guides/GIT_WORKFLOW.md
+```

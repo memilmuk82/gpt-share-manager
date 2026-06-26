@@ -31,7 +31,7 @@ Flask 버전은 기존 운영 버전을 직접 수정하지 않고 별도 프로
 
 ```text
 현재 Phase: Phase F-0
-상태: 사용자 통제형 AI 협업 개발 원칙, 점진적 구조화 원칙, 문서 배치 원칙 반영 완료 / Phase F-1 착수 준비
+상태: 사용자 통제형 AI 협업 개발 원칙, 점진적 구조화 원칙, 문서 배치 원칙, Git 작업 흐름 반영 완료 / Phase F-1 착수 준비
 ```
 
 ## 4. 현재까지 완료된 결정
@@ -184,6 +184,29 @@ Codex는 승인 전 push 금지
 Codex는 사용자의 구현 보조자이지 대체자가 아님
 ```
 
+### Git 작업 흐름 / 커밋 메시지
+
+```text
+Git 기록은 개발 과정과 판단을 남기는 학습 자료로 본다.
+커밋 메시지는 [Phase] type: 한국어 설명 형식을 사용한다.
+영어 type prefix와 한국어 설명을 함께 사용한다.
+Codex가 만든 변경도 사용자가 diff를 검토한 뒤 커밋한다.
+승인 없는 Codex commit/push는 금지한다.
+```
+
+기본 type:
+
+```text
+docs
+feat
+fix
+refactor
+test
+style
+build
+chore
+```
+
 ### 모델 사용 원칙
 
 ```text
@@ -221,6 +244,7 @@ docs/architecture/REPOSITORY_STRUCTURE.md
 docs/development/PHASE_F1_TASK_PLAN.md
 docs/development/DEVELOPMENT_LOG.md
 docs/guides/CODEX_PROMPT_PHASE_F1.md
+docs/guides/GIT_WORKFLOW.md
 docs/decisions/AI_COLLABORATION_REVIEW.md
 docs/decisions/TECH_STACK_DECISIONS.md
 docs/decisions/PROGRESSIVE_STRUCTURING.md
@@ -229,6 +253,7 @@ docs/adr/0002-use-postgresql-only.md
 docs/adr/0003-human-controlled-ai-collaboration.md
 docs/adr/0004-progressive-structuring.md
 docs/adr/0005-use-jinja-vanilla-tailwind.md
+docs/adr/0006-use-phase-based-korean-commit-messages.md
 ```
 
 ### 문서 배치 결정
